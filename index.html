@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <!-- Vinculando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <h2>Calculadora de Desconto</h2>
+        <form id="formulario">
+            <div class="input-grupo">
+                <label for="valor1">Valor da Compra (R$)</label>
+                <input type="number" id="valor1" step="0.01" placeholder="Ex: 120.00" required>
+            </div>
+
+            <div class="input-grupo">
+                <label for="resultado">Resultado / Valor Final</label>
+                <input type="text" id="resultado" placeholder="O resultado aparecerá aqui" readonly>
+            </div>
+
+            <button type="submit" class="btn-enviar">Calcular</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
